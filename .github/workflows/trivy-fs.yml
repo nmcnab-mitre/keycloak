@@ -7,7 +7,7 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
@@ -21,3 +21,4 @@ jobs:
         exit-code: '1'
         format: json
         timeout: 60m0s
+        scanners: vuln
