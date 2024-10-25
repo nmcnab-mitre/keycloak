@@ -18,6 +18,3 @@ jobs:
         scan-type: 'fs'
         scan-ref: '.'
         trivy-config: trivy.yaml
-        uses: github/codeql-action/upload-sarif@v3
-        with:
-          sarif_file: 'trivy-results.sarif'
