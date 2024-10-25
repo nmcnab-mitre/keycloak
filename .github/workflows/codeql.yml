@@ -11,14 +11,15 @@
 #
 name: "CodeQL Advanced"
 
-paths-ignore:
-  - testsuite/integration-arquillian/servers/auth-server/services/testsuite-providers-deployment/src/main/resources/scripts/test-bad-script-mapper3.js
-
 on:
   push:
     branches: [ "main" ]
+    paths-ignore:
+      - testsuite/integration-arquillian/servers/auth-server/services/testsuite-providers-deployment/src/main/resources/scripts/test-bad-script-mapper3.js
   pull_request:
     branches: [ "main" ]
+    paths-ignore:
+      - testsuite/integration-arquillian/servers/auth-server/services/testsuite-providers-deployment/src/main/resources/scripts/test-bad-script-mapper3.js
   schedule:
     - cron: '45 22 * * 0'
 
